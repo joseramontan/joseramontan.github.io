@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sample</title>
+        <link rel="stylesheet" type="text/css" href="./asset/css/font.css" />
+        <link rel="stylesheet" type="text/css" href="./asset/css/nav.css" />
+        <link rel="stylesheet" type="text/css" href="./asset/css/status.css" />
+    </head>
+    <style>
+        .jose {
+            margin: 0;    
+        }
+
+        .jose.wireframe {
+            background:
+                linear-gradient(to right, hsla(0, 0%, 76%, .25) 1px, transparent 1px) 0 0,
+                linear-gradient(to bottom, hsla(0, 0%, 76%, .25) 1px, transparent 1px) 0 0;
+            background-color: hsla(55, 70%, 96%, 1);
+            background-size: 24px 24px;
+            cursor: url("./asset/image/cursor.png"), auto;
+        }
+
+        .flex,
+        .flex-column {
+            display: flex;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        /* header */
+
+        .jose .header {
+            justify-content: space-between;
+        }
+
+        /* main */
+
+        .jose .main {
+            margin: 156px 0 0 0;
+        }
+        
+        /* wireframe - laptop/desktop screen */
+
+        .jose.wireframe > .screen {
+            box-sizing: border-box;
+            border: 32px solid hsla(0, 100%, 100%, 1);
+            height: 100vh;
+            overflow: clip;
+        }
+        
+    </style>
+    <body class="jose wireframe">
+        <div class="screen">
+            <main style="border-radius: 8px; height: 100vh; border: 2px solid black; height: calc(100vh - 69px);">
+                a
+            </main>
+        </div>
+        <div class="body">asdasd</div>
+    </body>
+</html>
